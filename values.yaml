@@ -165,6 +165,9 @@ securityContext: {}
 # -- Specify runtime class
 runtimeClassName: ""
 
+# -- Specify scheduler name
+schedulerName: ""
+
 # Configure Service
 service:
 

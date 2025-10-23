@@ -1,0 +1,40 @@
+# Example values file demonstrating custom scheduler and runtime configuration
+# This example shows how to configure the chart similar to the deployment spec
+# with custom scheduler, runtime class, labels, and annotations
+
+# Custom scheduler configuration
+schedulerName: "kai-scheduler"
+
+# Runtime class for NVIDIA GPU support
+runtimeClassName: "nvidia"
+
+# Custom labels for pod template
+podLabels:
+  kai.scheduler/queue: "test"
+
+# Custom annotations for pod template
+podAnnotations:
+  gpu-memory: "7000"
+
+# Resource configuration
+resources:
+  requests:
+    cpu: "1"
+  limits:
+    cpu: "1"
+
+# Enable GPU support
+ollama:
+  gpu:
+    enabled: true
+    type: nvidia
+    number: 1
+
+# Example with custom container arguments (if needed)
+# extraArgs:
+#   - "--model"
+#   - "cross-encoder/ms-marco-MiniLM-L-6-v2"
+#   - "--gpu-memory-utilization"
+#   - "0.2"
+#   - "--port"
+#   - "8000"
