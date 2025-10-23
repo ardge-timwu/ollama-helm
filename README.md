@@ -1,5 +1,8 @@
 ![otwld ollama helm chart banner](./banner.png)
 
+
+This is a forked version.
+
 ![GitHub License](https://img.shields.io/github/license/otwld/ollama-helm)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/ollama-helm)](https://artifacthub.io/packages/helm/ollama-helm/ollama)
 [![Helm Lint and Test](https://github.com/otwld/ollama-helm/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/otwld/ollama-helm/actions/workflows/ci.yaml)
